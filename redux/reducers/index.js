@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 import metric from './metric';
 import imperial from './imperial';
 

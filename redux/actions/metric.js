@@ -9,6 +9,16 @@ export const POST_METRIC = (postMetric) => {
   };
 };
 
+export const TO_METRIC = (toMetric) => {
+  return function (dispatch) {
+    dispatch({
+      type: actionTypes.TO_METRIC,
+      payload: toMetric
+    });
+  };
+};
+
 export default {
-  POST_METRIC
+  POST_METRIC,
+  TO_METRIC
 };

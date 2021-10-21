@@ -37,14 +37,27 @@ Notes on Unit Tests:
 1. verify the form renders correctly
 2. changing the units properly recalculates the height and weight values.
 
+----------------------------------------------------------------------------
 Built with:
+- React 
 - React Native => https://reactnative.dev/docs/getting-started
-- react-native-fs => https://github.com/itinance/react-native-fs
 - React Hooks => https://reactjs.org/docs/hooks-intro.html
+
+Global State Management:
 - Redux => https://redux.js.org/introduction/getting-started
 - Thunk => https://redux.js.org/usage/writing-logic-thunks
+
+Simulation:
 - Expo => https://docs.expo.dev/
 
+Write/Read Files:
+- expo-file-system => https://docs.expo.dev/versions/latest/sdk/filesystem/
+
+UI/UX:
+- expo-linear-gradient => https://docs.expo.dev/versions/latest/sdk/linear-gradient/
+- icons => https://icons.expo.fyi/
+
+----------------------------------------------------------------------------
 Setup:
 1. install node.js => https://nodejs.org/en/
 2. npm install --global expo-cli => https://docs.expo.dev/

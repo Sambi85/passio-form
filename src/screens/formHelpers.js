@@ -1,26 +1,19 @@
+import * as FileSystem from 'expo-file-system';
 
-export const saveHandler = () => {
-  // let payload =  JSON.stringify({ 
-  //     'weight': `${weight}`,
-  //     'height': `${height}`,
-  //     'inches': `${inches}`,
-  //     'system': `${som}`,
-  //     'timeStamp': `${Date.now()/1000}`
-  // })
-  
-  
-const RNFS = require('react-native-fs');
-// create a path you want to write to
-const path = RNFS.DocumentDirectoryPath + '/test.text';
- 
-// write the file
-RNFS.writeFile(path, 'Lorem', 'utf8')
-  .then((success) => {
-    console.log('FILE WRITTEN!');
-  })
-  .catch((err) => {
-    console.log(err.message);
-  });
+export const saveHandler = async (saveData) => {
+
+  let contents = JSON.stringify(saveData);
+  let fileUri = `${FileSystem.documentDirectory + 'formData.txt'}`;
+  let options = { encoding: FileSystem.EncodingType.UTF8 };
+  let readFile ='read';
+
+  try {
+    FileSystem.writeAsStringAsync(fileUri, contents, options);
+    readFile = await FileSystem.readAsStringAsync(fileUri, options);
+  } catch(e) {
+    console.log(e);
+  };
+  console.log(readFile);
 };
 
 export const toMetric = (imperial) => {

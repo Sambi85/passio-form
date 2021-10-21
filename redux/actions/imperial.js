@@ -9,6 +9,16 @@ export const POST_IMPERIAL = (postImperial) => {
   };
 };
 
+export const TO_IMPERIAL = (convertedData) => {
+  return function (dispatch) {
+    dispatch({
+      type: actionTypes.TO_IMPERIAL,
+      payload: convertedData
+    });
+  };
+};
+
 export default {
-  POST_IMPERIAL
+  POST_IMPERIAL,
+  TO_IMPERIAL
 };

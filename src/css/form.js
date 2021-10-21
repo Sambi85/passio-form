@@ -5,11 +5,32 @@ export const styles = StyleSheet.create({
       fontSize: 20
     },
     header: {
+      top: 35,
       fontSize: 40,
+      fontWeight: 'bold',
+      color: 'white',
       alignSelf: 'center'
     },
     subHeader: {
       fontSize: 40
+    },
+    weightText: {
+      left: 10,
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: 'white'
+    },
+    heightText: {
+      left: 25,
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: 'white'
+    },
+    inchesText: {
+      left: 35,
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: 'white'
     },
     errorMessage: {
         fontSize: 20,
@@ -18,29 +39,38 @@ export const styles = StyleSheet.create({
         color: 'red'
     },
     pickerView: {
-        top:200,
+        top:170,
         alignSelf: 'center'
     },
     picker: {
       height: 50, 
-      width: 150 
+      width: 150,
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: 'white'
+    },
+    pickerItem: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: 'white'
     },
     imperialHeight: {
         flexDirection: 'row'
     },
     somView: {
+      top: 110,
       alignSelf: 'center',
       flexDirection: 'row',
       right: 5
     },
     weight: {
-      left: 5
+      left: 3
     },
     height: {
-      left: 10
+      left: 18
     },
     inches: {
-      left: 15
+      left: 30
     },
     buttonView: {
       top: 300,
@@ -60,6 +90,11 @@ export const styles = StyleSheet.create({
         color: 'white',
         alignSelf: 'center',
         top: 6
+    },
+    background: {
+      width: '100%',
+      height: '100%',
+      opacity: 0.9
     }
   });
 
